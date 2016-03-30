@@ -3,13 +3,26 @@
 set -xe
 
 sudo apt-get update
-sudo apt-get install -y wget vim tmux git terminator ssh tree ubuntu-wallpaper*
+sudo apt-get install -y wget vim tmux git ssh tree
+case "$1" in
+	gui)
+	sudo apt-get install -y terminator ubuntu-wallpaper*
+	;;
+	*)
+	;;
+esac
 
 git config --global user.email "pedrobmarin@gmail.com"
 git config --global user.name "Pedro Beschorner Marin"
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-cd config
-cp terminator ~/.config/terminator/config
+cd ../config
 cp vim ~/.vimrc
 cp tmux ~/.tmux.conf
+case "$1" in
+	gui)
+	cp terminator ~/.config/terminator/config
+	;;
+	*)
+	;;
+esac
