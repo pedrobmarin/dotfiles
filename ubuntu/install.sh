@@ -3,7 +3,7 @@
 set -xe
 
 sudo apt-get update
-sudo apt-get install -y wget vim tmux git ssh tree
+sudo apt-get install -y wget vim tmux git ssh tree bash-completion
 case "$1" in
 	gui)
 	sudo apt-get install -y terminator vlc ubuntu-wallpaper*
