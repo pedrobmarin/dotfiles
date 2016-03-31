@@ -6,7 +6,7 @@ sudo apt-get update
 sudo apt-get install -y wget vim tmux git ssh tree
 case "$1" in
 	gui)
-	sudo apt-get install -y terminator ubuntu-wallpaper*
+	sudo apt-get install -y terminator vlc ubuntu-wallpaper*
 	;;
 	*)
 	;;
