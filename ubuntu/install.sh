@@ -14,6 +14,8 @@ esac
 
 git config --global user.email "pedrobmarin@gmail.com"
 git config --global user.name "Pedro Beschorner Marin"
+git config --global diff.tool = "vimdiff"
+git config --global merge.tool = "vimdiff"
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 cd ../config
