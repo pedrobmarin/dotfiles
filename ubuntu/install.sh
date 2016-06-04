@@ -3,12 +3,32 @@
 set -xe
 
 sudo apt-get update
-sudo apt-get install -y wget vim tmux git ssh tree curl bash-completion nmap
+sudo apt-get install -y \
+		wget \
+		vim \
+		tmux \
+		git \
+		ssh \
+		tree \
+		curl \
+		bash-completion \
+		nmap
 case "$1" in
 	gui)
-	sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+	sudo add-apt-repository -y \
+			ppa:webupd8team/sublime-text-3 \
+			ppa:numix/ppa
 	sudo apt-get update
-	sudo apt-get install -y terminator vlc ubuntu-wallpaper* meld git-gui sublime-text-installer
+	sudo apt-get install -y \
+			terminator \
+			vlc \
+			ubuntu-wallpaper* \
+			meld \
+			git-gui \
+			sublime-text-installer \
+			unity-tweak-tool \
+			numix-gtk-theme \
+			numix-icon-theme-circle
 	;;
 	*)
 	;;
