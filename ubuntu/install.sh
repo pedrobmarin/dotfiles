@@ -15,9 +15,8 @@ sudo apt-get install -y \
 		nmap
 case "$1" in
 	gui)
-	sudo add-apt-repository -y \
-			ppa:webupd8team/sublime-text-3 \
-			ppa:numix/ppa
+	sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+	sudo add-apt-repository -y ppa:numix/ppa
 	sudo apt-get update
 	sudo apt-get install -y \
 			terminator \
