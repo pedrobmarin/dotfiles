@@ -12,7 +12,8 @@ sudo apt-get install -y \
 		tree \
 		curl \
 		bash-completion \
-		nmap
+		nmap \
+		nano
 case "$1" in
 	gui)
 	sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
