@@ -24,6 +24,7 @@ case "$1" in
 			ubuntu-wallpaper* \
 			meld \
 			git-gui \
+			git-cola \
 			sublime-text-installer \
 			unity-tweak-tool \
 			numix-gtk-theme \
