@@ -27,13 +27,21 @@ case "$1" in
 			vlc \
 			ubuntu-wallpaper* \
 			meld \
-			git-gui \
 			git-cola \
 			sublime-text-installer \
 			unity-tweak-tool \
 			numix-gtk-theme \
 			numix-icon-theme-circle \
-			google-chrome-stable
+			google-chrome-stable \
+			cabextract
+	cd /tmp
+	wget http://download.microsoft.com/download/E/6/7/E675FFFC-2A6D-4AB0-B3EB-27C9F8C8F6$
+	cabextract -L -F ppviewer.cab PowerPointViewer.exe
+	cabextract ppviewer.cab
+	if [ ! -d ~/.fonts ]; then
+		mkdir ~/.fonts
+	fi
+	cp *.TT* ~/.fonts
 	;;
 	*)
 	;;
@@ -42,7 +50,9 @@ esac
 git config --global user.email "pedrobmarin@gmail.com"
 git config --global user.name "Pedro Beschorner Marin"
 
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+if [ ! -d ~/.vim/bundle/vundle ]; then
+	git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+fi
 cd ../config
 cp vim ~/.vimrc
 cp tmux ~/.tmux.conf
