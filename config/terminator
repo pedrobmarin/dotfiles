@@ -6,6 +6,8 @@
 
 [profiles]
   [[default]]
+    background_image = None
+    font = Monospace 10
 
   [[solarized-dark]]
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
@@ -26,11 +28,12 @@
       order = 0
       parent = ""
     [[[child1]]]
-      type = Notebook
+      type = HPaned
       order = 0
       parent = child0
-    [[[child3]]]
-      type = HPaned
+    [[[terminal3]]]
+      profile = solarized-light
+      type = Terminal
       order = 1
       parent = child1
     [[[terminal2]]]
@@ -38,15 +41,5 @@
       type = Terminal
       order = 0
       parent = child1
-    [[[terminal5]]]
-      profile = solarized-light
-      type = Terminal
-      order = 1
-      parent = child3
-    [[[terminal4]]]
-      profile = solarized-dark
-      type = Terminal
-      order = 0
-      parent = child3
 
 [plugins]
