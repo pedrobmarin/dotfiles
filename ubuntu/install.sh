@@ -34,7 +34,8 @@ case "$1" in
 			numix-icon-theme-circle \
 			google-chrome-stable \
 			cabextract
-	cd /tmp
+	mkdir tmp
+	cd tmp
 	wget http://download.microsoft.com/download/E/6/7/E675FFFC-2A6D-4AB0-B3EB-27C9F8C8F696/PowerPointViewer.exe
 	cabextract -L -F ppviewer.cab PowerPointViewer.exe
 	cabextract ppviewer.cab
@@ -42,6 +43,8 @@ case "$1" in
 		mkdir ~/.fonts
 	fi
 	cp *.TT* ~/.fonts
+	cd ..
+	rm -R tmp
 	;;
 	*)
 	;;
