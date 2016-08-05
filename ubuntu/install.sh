@@ -35,7 +35,7 @@ case "$1" in
 			google-chrome-stable \
 			cabextract
 	cd /tmp
-	wget http://download.microsoft.com/download/E/6/7/E675FFFC-2A6D-4AB0-B3EB-27C9F8C8F6$
+	wget http://download.microsoft.com/download/E/6/7/E675FFFC-2A6D-4AB0-B3EB-27C9F8C8F696/PowerPointViewer.exe
 	cabextract -L -F ppviewer.cab PowerPointViewer.exe
 	cabextract ppviewer.cab
 	if [ ! -d ~/.fonts ]; then
