@@ -30,19 +30,10 @@
       type = Window
       order = 0
       parent = ""
-    [[[child1]]]
-      type = HPaned
-      order = 0
-      parent = child0
-    [[[terminal3]]]
-      profile = solarized-light
-      type = Terminal
-      order = 1
-      parent = child1
-    [[[terminal2]]]
+    [[[terminal1]]]
       profile = solarized-dark
       type = Terminal
       order = 0
-      parent = child1
+      parent = child0
 
 [plugins]
