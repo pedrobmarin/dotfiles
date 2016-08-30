@@ -33,7 +33,8 @@ case "$1" in
 			numix-gtk-theme \
 			numix-icon-theme-circle \
 			google-chrome-stable \
-			cabextract
+			cabextract \
+			synaptic
 	mkdir tmp
 	cd tmp
 	wget http://download.microsoft.com/download/E/6/7/E675FFFC-2A6D-4AB0-B3EB-27C9F8C8F696/PowerPointViewer.exe
