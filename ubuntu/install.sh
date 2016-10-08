@@ -34,7 +34,8 @@ case "$1" in
 			numix-icon-theme-circle \
 			google-chrome-stable \
 			cabextract \
-			synaptic
+			synaptic \
+			lxc
 	mkdir tmp
 	cd tmp
 	wget http://download.microsoft.com/download/E/6/7/E675FFFC-2A6D-4AB0-B3EB-27C9F8C8F696/PowerPointViewer.exe
@@ -62,6 +63,7 @@ cp vim ~/.vimrc
 cp tmux ~/.tmux.conf
 case "$1" in
 	gui)
+	mkdir -p ~./config/terminator
 	cp terminator ~/.config/terminator/config
 	;;
 	*)
