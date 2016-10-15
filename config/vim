@@ -40,3 +40,7 @@ set noexpandtab
 set shiftwidth=4
 set nobackup
 set noswapfile
+
+hi SpecialKey term=bold cterm=bold ctermfg=240 ctermbg=NONE gui=bold guifg=Blue
+set listchars=tab:>~,space:·
+set list
