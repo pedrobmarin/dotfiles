@@ -1,50 +1,50 @@
 [global_config]
-  focus = system
-  title_use_system_font = False
-  title_font = Consolas 10
-  title_inactive_bg_color = "#002b36"
-  title_inactive_fg_color = "#eee8d5"
-  title_transmit_bg_color = "#eee8d5"
-  title_transmit_fg_color = "#002b36"
-  window_state = maximise
+	focus = system
+	title_use_system_font = False
+	title_font = Consolas 10
+	title_inactive_bg_color = "#002b36"
+	title_inactive_fg_color = "#eee8d5"
+	title_transmit_bg_color = "#eee8d5"
+	title_transmit_fg_color = "#002b36"
+	window_state = maximise
 
 [keybindings]
 
 [profiles]
-  [[default]]
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    foreground_color = "#eee8d5"
-    background_color = "#002b36"
-    cursor_color = "#eee8d5"
-    font = Consolas 10
-	use_system_font = False
+	[[default]]
+		palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+		foreground_color = "#eee8d5"
+		background_color = "#002b36"
+		cursor_color = "#eee8d5"
+		font = Consolas 10
+		use_system_font = False
 
-  [[solarized-dark]]
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    foreground_color = "#eee8d5"
-    background_color = "#002b36"
-    cursor_color = "#eee8d5"
-    font = Consolas 10
-	use_system_font = False
+	[[solarized-dark]]
+		palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+		foreground_color = "#eee8d5"
+		background_color = "#002b36"
+		cursor_color = "#eee8d5"
+		font = Consolas 10
+		use_system_font = False
 
-  [[solarized-light]]
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    background_color = "#eee8d5"
-    foreground_color = "#002b36"
-    cursor_color = "#002b36"
-    font = Consolas 10
-	use_system_font = False
+	[[solarized-light]]
+		palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+		background_color = "#eee8d5"
+		foreground_color = "#002b36"
+		cursor_color = "#002b36"
+		font = Consolas 10
+		use_system_font = False
 
 [layouts]
-  [[default]]
-    [[[child0]]]
-      type = Window
-      order = 0
-      parent = ""
-    [[[terminal1]]]
-      profile = solarized-dark
-      type = Terminal
-      order = 0
-      parent = child0
+	[[default]]
+		[[[child0]]]
+			type = Window
+			order = 0
+			parent = ""
+		[[[terminal1]]]
+			profile = solarized-dark
+			type = Terminal
+			order = 0
+			parent = child0
 
 [plugins]
