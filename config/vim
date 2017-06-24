@@ -22,6 +22,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ervandew/supertab'
 Plugin 'honza/vim-snippets'
+Plugin 'bronson/vim-trailing-whitespace'
 
 call vundle#end()
 filetype plugin indent on
