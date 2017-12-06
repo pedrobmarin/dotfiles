@@ -32,6 +32,7 @@ sudo apt-get install -y \
 		cabextract \
 		synaptic \
 		lxc \
+		lxc-template \
 		redshift \
 		redshift-gtk
 
