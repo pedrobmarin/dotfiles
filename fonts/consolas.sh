@@ -13,7 +13,7 @@ cabextract -L -F ppviewer.cab PowerPointViewer.exe
 cabextract ppviewer.cab
 
 if [ ! -d ~/.fonts ]; then
->---mkdir ~/.fonts
+	mkdir ~/.fonts
 fi
 
 cp *.TT* ~/.fonts
