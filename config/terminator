@@ -9,7 +9,6 @@
 	window_state = maximise
 
 [keybindings]
-	hide_window = F12
 
 [profiles]
 	[[default]]
