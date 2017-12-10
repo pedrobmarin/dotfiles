@@ -2,11 +2,11 @@
 
 set -xe
 
-APPS=../../apps
-CONFIGS=../../configs
-THEMES=../../themes
-FONTS=../../fonts
-PLUGINS=../../plugins
+APPS=apps
+CONFIGS=configs
+THEMES=themes
+FONTS=fonts
+PLUGINS=plugins
 
 sudo apt-get update
 sudo apt-get install -y \
@@ -21,11 +21,12 @@ sudo apt-get install -y \
 		htop \
 		terminator \
 		vlc \
+		ubuntu-wallpaper \
+		unity-tweak-tool \
 		meld \
 		git-cola \
 		synaptic \
 		lxc \
-		lxc-template \
 		redshift \
 		redshift-gtk
 
