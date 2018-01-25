@@ -27,7 +27,8 @@ sudo apt-get install -y \
 		lxc \
 		lxc-template \
 		redshift \
-		redshift-gtk
+		redshift-gtk \
+		mint-backgrounds-*
 
 ./$APL/atom.sh
 ./$APL/chrome.sh
