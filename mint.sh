@@ -36,6 +36,7 @@ sudo apt-get install -y \
 ./$APL/steam.sh
 ./$FNT/consolas.sh
 ./$THM/numix.sh
+./$THM/conky-vision.sh
 ./$PGN/vundle.sh
 ./$PGN/tpm.sh
 
@@ -44,4 +45,5 @@ mkdir -p ~./config/terminator
 cp $CNF/vim ~/.vimrc
 cp $CNF/tmux ~/.tmux.conf
 cp $CNF/git ~/.gitconfig
+cp $CNF/conky ~/.conkyrc
 cp $CNF/terminator ~/.config/terminator/config
