@@ -7,6 +7,7 @@ CNF=configurations
 THM=themes
 FNT=fonts
 PGN=plugins
+ASR=autostart
 
 sudo apt-get update
 sudo apt-get install -y \
@@ -47,3 +48,6 @@ cp $CNF/tmux ~/.tmux.conf
 cp $CNF/git ~/.gitconfig
 cp $CNF/conky ~/.conkyrc
 cp $CNF/terminator ~/.config/terminator/config
+
+cp $CNF/$ASR/conky ~/.config/autostart/conky.desktop
+cp $CNF/$ASR/redshift ~/.config/autostart/redshift.desktop

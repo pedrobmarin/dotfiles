@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Categories=Utility
+Name=Conky
+Comment=A light-weight system monitor
+GenericName=System monitor
+Icon=conky
+Version=1.0
+Exec=conky --pause=10
+Hidden=false
+X-MATE-Autostart-enabled=true
+Terminal=false
+StartupNotify=true
