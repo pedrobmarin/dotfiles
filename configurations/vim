@@ -14,8 +14,9 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
-Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'majutsushi/tagbar'
 Plugin 'godlygeek/tabular'
@@ -34,6 +35,8 @@ set t_Co=256
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
 
 set laststatus=2
 set tabstop=4
@@ -43,6 +46,9 @@ set shiftwidth=4
 set nobackup
 set noswapfile
 
+let g:airline_left_sep='›'
+let g:airline_right_sep='‹'
+
 hi SpecialKey term=bold cterm=bold ctermfg=240 ctermbg=NONE gui=bold guifg=Blue
-set listchars=tab:>-
+set listchars=tab:›-
 set list
