@@ -20,6 +20,7 @@ sudo apt-get install -y \
 		curl \
 		bash-completion \
 		htop \
+		bless \
 		terminator \
 		vlc \
 		meld \
