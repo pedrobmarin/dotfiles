@@ -7,7 +7,6 @@ CNF=configurations
 THM=themes
 FNT=fonts
 PGN=plugins
-ASR=autostart
 
 sudo apt-get update
 sudo apt-get install -y \
@@ -42,13 +41,10 @@ sudo apt-get install -y \
 ./$PGN/vundle.sh
 ./$PGN/tpm.sh
 
-mkdir -p ~./config/terminator
+cd ~
+cp $CNF/.vimrc .
+cp $CNF/.tmux.conf .
+cp $CNF/.gitconfig .
+cp $CNF/.conkyrc .
 
-cp $CNF/vim ~/.vimrc
-cp $CNF/tmux ~/.tmux.conf
-cp $CNF/git ~/.gitconfig
-cp $CNF/conky ~/.conkyrc
-cp $CNF/terminator ~/.config/terminator/config
-
-cp $CNF/$ASR/conky ~/.config/autostart/conky.desktop
-cp $CNF/$ASR/redshift ~/.config/autostart/redshift.desktop
+cp -r $CNF/.config .
