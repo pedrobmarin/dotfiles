@@ -41,10 +41,9 @@ sudo apt-get install -y \
 ./$PGN/vundle.sh
 ./$PGN/tpm.sh
 
-cd ~
-cp $CNF/.vimrc .
-cp $CNF/.tmux.conf .
-cp $CNF/.gitconfig .
-cp $CNF/.conkyrc .
+cp $CNF/.vimrc ~/.
+cp $CNF/.tmux.conf ~/.
+cp $CNF/.gitconfig ~/.
+cp $CNF/.conkyrc ~/.
 
-cp -r $CNF/.config .
+cp -r $CNF/.config ~/.
