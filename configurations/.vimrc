@@ -52,3 +52,5 @@ let g:airline_right_sep='‹'
 hi SpecialKey term=bold cterm=bold ctermfg=240 ctermbg=NONE gui=bold guifg=Blue
 set listchars=tab:›-
 set list
+
+let NERDTreeShowHidden=1
