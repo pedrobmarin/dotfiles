@@ -58,9 +58,39 @@ set nobackup
 set noswapfile
 set number
 set cursorline
+set autoread
+set so=7
 
-" shame little setting
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
+set ignorecase
+set smartcase
+
+set lazyredraw
+set magic
+
+set showmatch
+set mat=2
+
+set encoding=utf8
+set ffs=unix,dos,mac
+
 set mouse=a
+
+vnoremap $1 <esc>`>a)<esc>`<i(<esc>
+vnoremap $2 <esc>`>a]<esc>`<i[<esc>
+vnoremap $3 <esc>`>a}<esc>`<i{<esc>
+vnoremap $$ <esc>`>a"<esc>`<i"<esc>
+vnoremap $q <esc>`>a'<esc>`<i'<esc>
+vnoremap $e <esc>`>a"<esc>`<i"<esc>
+
+inoremap $1 ()<esc>i
+inoremap $2 []<esc>i
+inoremap $3 {}<esc>i
+inoremap $4 {<esc>o}<esc>O
+inoremap $q ''<esc>i
+inoremap $e ""<esc>i
 
 " altercation/vim-colors-solarized
 let g:solarized_termtrans=1
