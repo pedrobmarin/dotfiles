@@ -1,9 +1,6 @@
 set nocompatible
 filetype off
 
-set number
-set cursorline
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 
@@ -36,24 +33,41 @@ call vundle#end()
 filetype plugin indent on
 syntax enable
 
+set autoindent
+set smartindent
+set smarttab
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set noexpandtab
+
+function! TabToggle()
+	if &expandtab
+		set noexpandtab
+	else
+		set expandtab
+	endif
+endfunction
+nmap <F9> mz:execute TabToggle()<CR>'z
+
+set incsearch
+set hlsearch
+set laststatus=2
+set nobackup
+set noswapfile
+set number
+set cursorline
+
+" shame little setting
+set mouse=a
+
 " altercation/vim-colors-solarized
 let g:solarized_termtrans=1
 set t_Co=256
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
-
-set autoindent
-set smartindent
-set smarttab
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-
-set laststatus=2
-set nobackup
-set noswapfile
 
 " vim-airline/vim-airline
 let g:airline_theme='solarized'
