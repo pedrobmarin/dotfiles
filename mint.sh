@@ -31,15 +31,15 @@ sudo apt-get install -y \
 		redshift-gtk \
 		mint-backgrounds-*
 
-./$APL/atom.sh
-./$APL/chrome.sh
-./$APL/spotify.sh
-./$APL/steam.sh
 ./$FNT/consolas.sh
 ./$THM/numix.sh
 ./$THM/conky-vision.sh
 ./$PGN/vundle.sh
 ./$PGN/tpm.sh
+./$APL/atom.sh
+./$APL/chrome.sh
+./$APL/spotify.sh
+# ./$APL/steam.sh
 
 cp $CNF/.vimrc ~/.
 cp $CNF/.tmux.conf ~/.

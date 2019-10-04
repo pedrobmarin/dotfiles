@@ -40,13 +40,13 @@ set smarttab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set noexpandtab
+set expandtab
 
 function! TabToggle()
-	if &expandtab
-		set noexpandtab
-	else
+	if &noexpandtab
 		set expandtab
+	else
+		set noexpandtab
 	endif
 endfunction
 nmap <F9> mz:execute TabToggle()<CR>'z
