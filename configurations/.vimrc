@@ -43,11 +43,11 @@ set shiftwidth=2
 set expandtab
 
 function! TabToggle()
-	if &noexpandtab
-		set expandtab
-	else
-		set noexpandtab
-	endif
+  if &expandtab
+    set noexpandtab
+  else
+    set expandtab
+  endif
 endfunction
 nmap <F9> mz:execute TabToggle()<CR>'z
 
