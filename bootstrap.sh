@@ -2,7 +2,6 @@
 
 set -xe
 
-CNF=configurations
 THM=themes
 FNT=fonts
 PGN=plugins
@@ -19,7 +18,6 @@ sudo apt-get install -y \
 		bash-completion \
 		htop \
 		terminator \
-		vlc \
 		meld \
 		git-cola \
 		redshift \
@@ -28,10 +26,10 @@ sudo apt-get install -y \
 
 ./$FNT/consolas.sh
 ./$THM/numix.sh
+
 ./$PGN/vundle.sh
 ./$PGN/tpm.sh
 
-cp $CNF/.vimrc ~/.
-cp $CNF/.tmux.conf ~/.
-
-cp -r $CNF/.config ~/.
+cp .vimrc ~/.
+cp .tmux.conf ~/.
+cp -r .config ~/.
