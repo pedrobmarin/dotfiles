@@ -2,7 +2,6 @@
 
 set -xe
 
-APL=applications
 CNF=configurations
 THM=themes
 FNT=fonts
@@ -19,31 +18,20 @@ sudo apt-get install -y \
 		curl \
 		bash-completion \
 		htop \
-		bless \
 		terminator \
 		vlc \
 		meld \
 		git-cola \
-		synaptic \
-		lxc \
-		lxc-template \
 		redshift \
 		redshift-gtk \
 		mint-backgrounds-*
 
 ./$FNT/consolas.sh
 ./$THM/numix.sh
-./$THM/conky-vision.sh
 ./$PGN/vundle.sh
 ./$PGN/tpm.sh
-./$APL/atom.sh
-./$APL/chrome.sh
-./$APL/spotify.sh
-# ./$APL/steam.sh
 
 cp $CNF/.vimrc ~/.
 cp $CNF/.tmux.conf ~/.
-cp $CNF/.gitconfig ~/.
-cp $CNF/.conkyrc ~/.
 
 cp -r $CNF/.config ~/.

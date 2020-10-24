@@ -23,11 +23,8 @@ Plugin 'ervandew/supertab'
 Plugin 'honza/vim-snippets'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
-Plugin 'elixir-editors/vim-elixir'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 
