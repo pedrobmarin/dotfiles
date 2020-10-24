@@ -33,3 +33,5 @@ sudo apt-get install -y \
 cp .vimrc ~/.
 cp .tmux.conf ~/.
 cp -r .config ~/.
+
+cat .bashrc >> ~/.bashrc
