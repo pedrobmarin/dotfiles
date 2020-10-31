@@ -2,42 +2,46 @@
 
 set -xe
 
-# base
+## base
 sudo apt-get update
 sudo apt-get install -y \
   wget \
   git
+##
 
-# fonts
-sudo apt-get install -y cabextract
-mkdir -p /tmp/fonts
-wget -O /tmp/fonts/PowerPointViewer.exe https://archive.org/download/PowerPointViewer_201801/PowerPointViewer.exe
-cabextract -L -F ppviewer.cab /tmp/fonts/PowerPointViewer.exe -d /tmp/fonts
-cabextract -L /tmp/fonts/ppviewer.cab -d /tmp/fonts
-if [ ! -d ~/.fonts ]; then
-  mkdir ~/.fonts
-fi
-cp /tmp/fonts/*.tt* ~/.fonts
-sudo apt-get remove cabextract
+#### fonts
+## firacode
+sudo apt-get install -y fonts-firacode
+## powerline
+sudo apt-get install -y fonts-powerline
+####
 
-# terminal
+#### terminal
 sudo apt-get install -y terminator
 mkdir -p .config
 cp -r .config/terminator ~/.config
+####
 
-# vim
+#### vim
 sudo apt-get install -y vim
+## vundle
 if [ ! -d ~/.vim/bundle/vundle ]; then
   git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 fi
+##
 cp .vimrc ~/.
+####
 
-# tmux
+#### tmux
 sudo apt-get install -y tmux
+## tpm
 if [ ! -d ~/.tmux/plugins ]; then
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
+##
 cp .tmux.conf ~/.
+####
 
-# bash
+#### bash
 cat .bashrc >> ~/.bashrc
+####
