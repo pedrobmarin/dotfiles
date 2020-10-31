@@ -5,11 +5,8 @@ set -xe
 # base
 sudo apt-get update
 sudo apt-get install -y \
-		wget \
-		git \
-		tree \
-		curl \
-        htop
+  wget \
+  git
 
 # fonts
 sudo apt-get install -y cabextract
