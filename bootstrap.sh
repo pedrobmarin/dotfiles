@@ -2,12 +2,11 @@
 
 set -xe
 
-## base
+#### base
 sudo apt-get update
-sudo apt-get install -y \
-  wget \
-  git
-##
+## git
+sudo apt-get install -y git
+####
 
 #### fonts
 ## firacode
@@ -17,7 +16,9 @@ sudo apt-get install -y fonts-powerline
 ####
 
 #### terminal
+## terminator
 sudo apt-get install -y terminator
+##
 mkdir -p .config
 cp -r .config/terminator ~/.config
 ####
