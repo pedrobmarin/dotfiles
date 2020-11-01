@@ -16,6 +16,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'ervandew/supertab'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'sheerun/vim-polyglot'
 
 call vundle#end()
 
