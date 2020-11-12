@@ -16,11 +16,9 @@ sudo apt-get install -y fonts-powerline
 ####
 
 #### terminal
-## terminator
-sudo apt-get install -y terminator
+sudo apt-get install -y gnome-terminal
 ##
-mkdir -p .config
-cp -r .config/terminator ~/.config
+dconf load /org/gnome/terminal/legacy/profiles:/ < .dconf
 ####
 
 #### vim
