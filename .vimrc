@@ -5,18 +5,19 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 
 Plugin 'gmarik/vundle'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ervandew/supertab'
+Plugin 'raimondi/delimitmate'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'arcticicestudio/nord-vim'
-Plugin 'ervandew/supertab'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'sheerun/vim-polyglot'
 
 call vundle#end()
 
