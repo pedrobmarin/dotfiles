@@ -9,6 +9,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'dense-analysis/ale'
 Plugin 'ervandew/supertab'
 Plugin 'raimondi/delimitmate'
 Plugin 'scrooloose/nerdtree'
@@ -92,3 +93,5 @@ colorscheme nord
 let g:airline_powerline_fonts=1
 
 let NERDTreeShowHidden=1
+
+let g:ale_linters = { 'javascript': ['eslint'] }
