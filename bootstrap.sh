@@ -5,6 +5,9 @@ set -xe
 sudo apt-get update
 sudo apt-get install -y git
 
+git config --global core.editor vim
+git config --global merge.tool vimdiff
+
 sudo apt-get install -y fonts-firacode
 sudo apt-get install -y fonts-powerline
 
